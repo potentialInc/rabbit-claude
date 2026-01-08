@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [],
+    "PostToolUse": [],
+    "Stop": []
+  },
+  "mcpServers": {}
+}

@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "skills": {
+    "backend-dev-guidelines": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "promptTriggers": {
+        "keywords": ["api", "backend", "controller", "service", "entity", "repository", "nestjs", "typeorm"]
+      },
+      "fileTriggers": {
+        "pathPatterns": ["backend/src/**/*.ts"],
+        "contentPatterns": ["@Controller|@Injectable|@Module"]
+      }
+    },
+    "frontend-dev-guidelines": {
+      "type": "domain",
+      "enforcement": "suggest",
+      "priority": "high",
+      "promptTriggers": {
+        "keywords": ["react", "component", "frontend", "ui", "tsx", "page", "tailwind", "shadcn"]
+      },
+      "fileTriggers": {
+        "pathPatterns": ["frontend/**/*.tsx", "frontend-dashboard/**/*.tsx"],
+        "contentPatterns": ["import.*from.*react"]
+      }
+    }
+  }
+}
